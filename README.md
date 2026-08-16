@@ -221,7 +221,7 @@ interests:
 
 <div align="center">
 
-<table>
+<table border="0">
 <tr>
 <td width="50%" align="center">
 
