@@ -1,45 +1,41 @@
-name: Generate GitHub Stats
+name: Update GitHub Stats
 
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  generate-stats:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate GitHub Stats SVG
-        uses: lowlighter/metrics@latest
+      - name: Generate GitHub Stats
+        uses: stats-organization/github-readme-stats-action@v2
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: Tushar-Mittal-09
-          template: classic
-          base: header, activity, community, repositories
-          filename: profile/stats.svg
-          config_timezone: Asia/Kolkata
+          card: stats
+          options: username=Tushar-Mittal-09&show_icons=true&theme=tokyonight&hide_border=true
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate Top Languages SVG
-        uses: lowlighter/metrics@latest
+      - name: Generate Top Languages
+        uses: stats-organization/github-readme-stats-action@v2
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: Tushar-Mittal-09
-          template: classic
-          base: ""
-          plugin_languages: yes
-          plugin_languages_analysis_timeout: 15
-          plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
-          plugin_languages_limit: 8
-          plugin_languages_sections: most-used
-          plugin_languages_threshold: 0%
-          filename: profile/top-langs.svg
-          config_timezone: Asia/Kolkata
+          card: top-langs
+          options: username=Tushar-Mittal-09&layout=compact&langs_count=6&theme=tokyonight&hide_border=true
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit generated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update GitHub stats cards" || exit 0
+          git push
