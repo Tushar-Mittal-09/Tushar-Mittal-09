@@ -216,7 +216,6 @@ interests:
 
 ---
 
-## 📊 GitHub Analytics
 
 ## 📊 GitHub Analytics
 
