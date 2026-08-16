@@ -219,10 +219,13 @@ interests:
 
 ## 📊 GitHub Analytics
 
+## 📊 GitHub Analytics
+
 <div align="center">
 
 <table border="0">
 <tr>
+
 <td width="50%" align="center">
 
 <img
@@ -242,6 +245,7 @@ interests:
 />
 
 </td>
+
 </tr>
 </table>
 
