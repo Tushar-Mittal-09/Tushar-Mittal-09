@@ -221,17 +221,29 @@ interests:
 
 <div align="center">
 
+<table>
+<tr>
+<td width="50%" align="center">
+
 <img
-  width="49%"
   src="./profile/stats.svg"
+  width="100%"
   alt="Tushar Mittal GitHub Stats"
 />
 
+</td>
+
+<td width="50%" align="center">
+
 <img
-  width="49%"
   src="./profile/top-langs.svg"
+  width="100%"
   alt="Tushar Mittal Top Languages"
 />
+
+</td>
+</tr>
+</table>
 
 </div>
 ---
