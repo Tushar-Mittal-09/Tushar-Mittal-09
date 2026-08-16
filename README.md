@@ -218,16 +218,23 @@ interests:
 
 ## 📊 GitHub Analytics
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Tushar-Mittal-09&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&icon_color=A855F7&text_color=c9d1d9" alt="GitHub Stats" height="180"/>
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tushar-Mittal-09&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=c9d1d9" alt="Top Languages" height="180"/>
-</p>
+## 📊 GitHub Analytics
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Tushar-Mittal-09&theme=tokyonight&hide_border=true&background=0D1117&ring=A855F7&fire=A855F7&currStreakLabel=A855F7" alt="GitHub Streak" width="60%"/>
-</p>
+<div align="center">
 
+<img
+  height="180"
+  src="./profile/stats.svg"
+  alt="Tushar Mittal GitHub Stats"
+/>
+
+<img
+  height="180"
+  src="./profile/top-langs.svg"
+  alt="Tushar Mittal Top Languages"
+/>
+
+</div>
 ---
 
 ## 🔭 Currently Exploring
