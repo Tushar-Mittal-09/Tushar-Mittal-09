@@ -222,13 +222,13 @@ interests:
 <div align="center">
 
 <img
-  height="180"
+  width="49%"
   src="./profile/stats.svg"
   alt="Tushar Mittal GitHub Stats"
 />
 
 <img
-  height="180"
+  width="49%"
   src="./profile/top-langs.svg"
   alt="Tushar Mittal Top Languages"
 />
